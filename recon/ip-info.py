@@ -10,31 +10,30 @@ os.system("")
 def loading(i):
     for i in range(0, 101):
         time.sleep(0.05)
-        print("\u2592"* int(i/4) + f" Loading {i}% \u2592",end="\r")
+        print("-"* int(i/4) + f" Loading {i}% \u2592",end="\r")
         #sys.stdout.flush()
     print()
 
-def titlecolor(col):
-    print(f'\x1b[38;2;{col}m title1 \x1b[48;5;235m title2 \x1b[0m')
+
 
 def title(string):
     string = str(string)
-    fcolor = "\u001b[38;2;255;200;0m"
-    bcolor = "\u001b[48;5;235m"
-    nocolor = "\u001b[0m"
-    l="\u2550"
+    fcolor = ""
+    bcolor = ""
+    nocolor = ""
+    l=""
     slen = len(string)
     l= l*(slen +0)
-    print(f"{fcolor}{bcolor}\u2554{l}\u2557")   
-    print(f"\u2551{bcolor}"+string +f"\u2551{nocolor}")
-    print(f"{fcolor}{bcolor}\u255A{l}\u255D{nocolor}") 
+    print(f"{fcolor}{bcolor}4{l}")   
+    print(f"{bcolor}"+string +f"{nocolor}")
+    print(f"{fcolor}{bcolor}{l}{nocolor}") 
 
 def prompt(msg):
-    i = input("\u001b[48;5;235m [?] " + msg + ": \u001b[0m ")
+    i = input(" [?] " + msg + ": ")
     return i
 
 def printx(label,msg):
-    print(f" {label} :  \u001b[48;5;235m \u001b[38;2;255;200;0m" + str(msg) + "\u001b[0m")
+    print(f" {label} : " + str(msg) + " ")
 
 
 
