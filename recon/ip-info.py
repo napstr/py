@@ -7,26 +7,6 @@ from json import load
 
 os.system("")
 
-def loading(i):
-    for i in range(0, 101):
-        time.sleep(0.05)
-        print("-"* int(i/4) + f" Loading {i}% \u2592",end="\r")
-        #sys.stdout.flush()
-    print()
-
-
-
-def title(string):
-    string = str(string)
-    fcolor = ""
-    bcolor = ""
-    nocolor = ""
-    l=""
-    slen = len(string)
-    l= l*(slen +0)
-    print(f"{fcolor}{bcolor}4{l}")   
-    print(f"{bcolor}"+string +f"{nocolor}")
-    print(f"{fcolor}{bcolor}{l}{nocolor}") 
 
 def prompt(msg):
     i = input(" [?] " + msg + ": ")
@@ -37,7 +17,7 @@ def printx(label,msg):
 
 
 
-title("      ~: IP INFORMATION :~      ")
+print("      ~: IP INFORMATION :~      ")
 
 ip_ = "192.168.1.1"
 
