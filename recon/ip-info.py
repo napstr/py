@@ -8,9 +8,6 @@ from json import load
 os.system("")
 
 
-def prompt(msg):
-    i = input(" [?] " + msg + ": ")
-    return i
 
 def printx(label,msg):
     print(f" {label} : " + str(msg) + " ")
@@ -48,5 +45,5 @@ def ipInfo(addr = ''):
     printx(" Is Linked Local",ip4.is_link_local)
 
 
-p1 = prompt("please enter ip address")
+p1 = input("[?] please enter ip address")
 ipInfo(p1)
